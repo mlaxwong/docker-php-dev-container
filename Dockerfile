@@ -12,3 +12,6 @@ RUN ln -s /${APP_DIR}${PUBLIC_DIR} /var/www/html
 
 # Permission
 RUN chmod 755 /var/www/html
+
+# VSCode as Git editor 
+RUN git config --global core.editor "code --wait"
