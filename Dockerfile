@@ -1,4 +1,4 @@
-FROM mlaxwong/php-stack:7.4.0-xdebug
+FROM mlaxwong/php-stack:7.2.0-xdebug
 
 # App
 WORKDIR /app
