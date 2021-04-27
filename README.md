@@ -4,8 +4,8 @@ PHP Development Container for VSCode
 
 | ENV Name | Default Value | Description |
 | -- | -- | -- |
-| `APP_DIR` | `app/` | App directory in docker container |
-| `PUBLIC_DIR` | `public/` | App public directory |
+| `APP_ROOT` | `app/` | App directory in docker container |
+| `APACHE_DOCUMENT_ROOT` | `app/public/` | App public directory |
 
 
 ## Run on docker
