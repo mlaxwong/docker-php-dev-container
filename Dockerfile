@@ -1,4 +1,4 @@
-FROM mlaxwong/php-dev-container:7.4.0.1
+FROM mlaxwong/php-dev-container:7.2.0.0
 
 # ENV
 ENV APP_ROOT=/app
@@ -6,6 +6,7 @@ ENV APACHE_DOCUMENT_ROOT=/app/public
 
 # App
 WORKDIR ${APP_ROOT}
+COPY . .
 
 # Change Apache Document Root
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
