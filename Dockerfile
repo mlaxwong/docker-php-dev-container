@@ -1,4 +1,4 @@
-FROM mlaxwong/php-dev-container:7.4.0.1
+FROM mlaxwong/php-dev-container:7.4.0.0
 
 # ENV
 ENV APP_ROOT=/app
