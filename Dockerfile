@@ -6,7 +6,6 @@ ENV APACHE_DOCUMENT_ROOT=/app/public
 
 # App
 WORKDIR ${APP_ROOT}
-COPY . .
 
 # Change Apache Document Root
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
